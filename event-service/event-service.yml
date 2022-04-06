@@ -1,6 +1,0 @@
-spring:
-  cloud:
-    consul:
-      discovery:
-        instance-id: custom-service-id
-        serviceName: myprefix-${spring.application.name}
