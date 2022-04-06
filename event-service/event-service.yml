@@ -1,14 +1,10 @@
 spring:
   cloud:
+    cloud:
     consul:
-      host: discovery
       discovery:
-        instanceId: ${spring.application.name}:${server.port}:${random.value}
-        health-check-url: http://event-service:8081/actuator/health
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 10MB
+        instance-id: custom-service-id
+        serviceName: myprefix-${spring.application.name}
 management:
   endpoints:
     web:
