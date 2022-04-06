@@ -1,12 +1,6 @@
 spring:
   cloud:
-    cloud:
     consul:
       discovery:
         instance-id: custom-service-id
         serviceName: myprefix-${spring.application.name}
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh,health
