@@ -1,7 +1,9 @@
 spring:
     datasource:
+	password: mysql
+    	username: root
         driver-class-name=com.mysql.jdbc.Driver
-        url: jdbc:mysql://database:3306/jevent_event_dev
+        url: jdbc:mysql://database:3306/jevent_event_dev?createDatabaseIfNotExist=true
     jpa:
         show-sql: true
         hibernate:
