@@ -6,7 +6,7 @@ spring:
       discovery:
         preferIpAddress: "true"
         instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,99999]}"
-        health-check-url: "${spring.cloud.client.hostname}/actuator/health"
+        health-check-url: "169.254.213.17/actuator/health"
 management:
   endpoints:
     web:
