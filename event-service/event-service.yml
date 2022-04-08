@@ -4,13 +4,15 @@ spring:
       port: 8500
       host: 172.23.16.1
       discovery:
-#         preferIpAddress: "true"
         instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,99999]}"
-#         health-check-url: "${spring.cloud.client.hostname}:${server.port}/actuator/health"
 management:
+  health:
+    consul:
+      enabled: false
   endpoints:
     web:
       exposure:
         include: refresh,health
 server:
   port: 0
+  
