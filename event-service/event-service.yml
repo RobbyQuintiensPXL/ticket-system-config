@@ -3,10 +3,10 @@
 # management.endpoint.health.show-details=always
 # management.health.db.enabled=false
 # management.health.diskspace.enabled=true
-
-
 management:
   endpoints:
+    health:
+      enabled: true
     web:
       exposure:
-        include: *
+        include: "*"
