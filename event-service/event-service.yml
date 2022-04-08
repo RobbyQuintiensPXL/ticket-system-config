@@ -2,7 +2,6 @@ spring:
   cloud:
     consul:
       port: 8500
-      host: 172.23.16.1
       discovery:
         instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,99999]}"
 management:
