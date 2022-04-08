@@ -6,9 +6,6 @@ spring:
       discovery:
         instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,99999]}"
 management:
-  health:
-    consul:
-      enabled: false
   endpoints:
     web:
       exposure:
