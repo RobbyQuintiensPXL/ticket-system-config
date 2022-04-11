@@ -1,9 +1,9 @@
 spring:
     datasource:
-        password: mysql
-        username: root
-        driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/jevent_ticket_dev
+        password: mysqlpass
+    	username: root
+    	driver-class-name: com.mysql.cj.jdbc.Driver
+    	url: jdbc:mysql://localhost:3306/jevents_ticket_dev
     jpa:
         show-sql: true
         hibernate:
