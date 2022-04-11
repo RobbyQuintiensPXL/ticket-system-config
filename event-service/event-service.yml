@@ -1,7 +1,6 @@
 spring:
   cloud:
     consul:
-#       host: 172.17.0.1
       discovery:
         prefer-ip-address: true
         instance-id: "${spring.application.name}:${random.int[1,99999]}"
