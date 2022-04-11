@@ -4,7 +4,7 @@ spring:
 #       host: 172.17.0.1
       discovery:
         prefer-ip-address: true
-        instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,99999]}"
+        instance-id: "${spring.application.name}:${random.int[1,99999]}"
 management:
   endpoints:
     web:
