@@ -10,4 +10,4 @@ management:
       exposure:
         include: refresh,health
 server:
-  port: 0
+  port: 8082
