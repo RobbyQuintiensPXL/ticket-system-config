@@ -13,4 +13,3 @@ management:
         include: refresh,health
 server:
   port: 8081
-  
