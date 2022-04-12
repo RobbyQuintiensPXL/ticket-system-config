@@ -3,7 +3,7 @@ spring:
     password: mysqlpass
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://database:3306/jevent_ticket_dev
+    url: jdbc:mysql://database-ticket:3307/jevents_ticket_dev?createDatabaseIfNotExist=true
   jpa:
     show-sql: true
     hibernate:
