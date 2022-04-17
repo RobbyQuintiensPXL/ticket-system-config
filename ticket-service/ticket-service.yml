@@ -1,15 +1,15 @@
 spring:
   cloud:
     consul:
-      port: 8500
-      host: consul
-      discovery:
-        prefer-ip-address: true
-        instance-id: "${spring.application.name}:${random.int[1,99999]}"
+        host: localhost
+        port: 8500
+        discovery:
+            prefer-ip-address: true
+            instance-id: "${spring.application.name}:${random.int[1,99999]}"
 management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh,health
+    endpoints:
+        web:
+            exposure:
+            include: refresh,health
 server:
-  port: 8082
+    port: 8082
